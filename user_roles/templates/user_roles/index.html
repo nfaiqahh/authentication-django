@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style type="text/css">
+        div{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: bisque;
+            text-align: center;
+            padding: 10px;
+        }
+
+        a:hover{
+            text-decoration: none;
+        }
+
+        .a{
+            width:50%;
+            margin: 5px;;
+        }
+
+    </style>
+    <title>Main Menu</title>
+</head>
+<body>
+    <div>
+        <h4>Server Room Permission System</h4><br>
+        <a href="accounts/login/"><button buttontype="button" class="btn btn-light btn-lg btn-block">Login</button></a><br><br>
+        <p>New user?</p>
+        <p>
+            <a href="{% url 'register' %}"><button class="a btn btn-secondary">Register Here</button></a>
+        </p>
+        <a href="admin/">Admin Login</a>
+    </div>
+</body>
+</html>
